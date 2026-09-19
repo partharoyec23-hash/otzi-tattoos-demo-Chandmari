@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | OTZI Tattoos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { gold: '#D4AF37', darkBg: '#0D0D0D', cardBg: '#161616' } } } }
+    </script>
+</head>
+<body class="bg-darkBg text-gray-200">
+    <nav class="bg-black/90 border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="assets/logo.png" alt="OTZI Logo" class="h-10 w-auto" onerror="this.src='https://via.placeholder.com/120x40?text=OTZI+LOGO'">
+            <span class="text-xl font-bold text-white">OTZI</span>
+        </a>
+        <div class="hidden md:flex space-x-6 text-sm">
+            <a href="index.html" class="hover:text-gold">Home</a>
+            <a href="about.html" class="hover:text-gold">About</a>
+            <a href="services.html" class="text-gold font-bold">Services</a>
+            <a href="gallery.html" class="hover:text-gold">Gallery & Videos</a>
+            <a href="contact.html" class="hover:text-gold">Contact</a>
+        </div>
+    </nav>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold text-gold text-center mb-12">Our Core Services</h1>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-cardBg p-8 rounded-2xl border border-white/10">
+                <h2 class="text-2xl font-bold text-white mb-4">Custom Tattoos</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">Blackwork, fine-line, mandalas, sleeve concepts, geometric patterns, and cover-ups.</p>
+            </div>
+            <div class="bg-cardBg p-8 rounded-2xl border border-white/10">
+                <h2 class="text-2xl font-bold text-white mb-4">Body Piercings</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">Navel, Helix, Tragus, Dermal Anchors, Nipple, Septum, and Vertical Labret piercings.</p>
+            </div>
+            <div class="bg-cardBg p-8 rounded-2xl border border-white/10">
+                <h2 class="text-2xl font-bold text-white mb-4">Permanent Makeup & Removal</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">Cosmetic permanent makeup enhancements and safe laser tattoo removal services.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
