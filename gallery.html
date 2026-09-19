@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery & Videos | OTZI Tattoos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { gold: '#D4AF37', darkBg: '#0D0D0D', cardBg: '#161616' } } } }
+    </script>
+</head>
+<body class="bg-darkBg text-gray-200">
+    <nav class="bg-black/90 border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="assets/logo.png" alt="OTZI Logo" class="h-10 w-auto" onerror="this.src='https://via.placeholder.com/120x40?text=OTZI+LOGO'">
+            <span class="text-xl font-bold text-white">OTZI</span>
+        </a>
+        <div class="hidden md:flex space-x-6 text-sm">
+            <a href="index.html" class="hover:text-gold">Home</a>
+            <a href="about.html" class="hover:text-gold">About</a>
+            <a href="services.html" class="hover:text-gold">Services</a>
+            <a href="gallery.html" class="text-gold font-bold">Gallery & Videos</a>
+            <a href="contact.html" class="hover:text-gold">Contact</a>
+        </div>
+    </nav>
+
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-gold text-center mb-4">Studio Portfolio</h1>
+        <p class="text-gray-400 text-center mb-12">Photos and videos of custom tattoos and body piercings done at OTZI Studio.</p>
+
+        <!-- Video Gallery Section -->
+        <h2 class="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-2">Studio Videos</h2>
+        <div class="grid md:grid-cols-2 gap-6 mb-16">
+            <div class="bg-cardBg p-2 rounded-xl border border-white/10">
+                <video controls class="w-full h-64 object-cover rounded-lg">
+                    <source src="assets/tattoo-video.mp4" type="video/mp4">
+                    Your browser does not support video play.
+                </video>
+                <p class="text-xs text-gray-400 mt-2 p-2">Custom Tattoo Session</p>
+            </div>
+            <div class="bg-cardBg p-2 rounded-xl border border-white/10">
+                <video controls class="w-full h-64 object-cover rounded-lg">
+                    <source src="assets/piercing-video.mp4" type="video/mp4">
+                    Your browser does not support video play.
+                </video>
+                <p class="text-xs text-gray-400 mt-2 p-2">Precision Piercing Work</p>
+            </div>
+        </div>
+
+        <!-- Photo Gallery Section -->
+        <h2 class="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-2">Photo Showcase</h2>
+        <div class="grid md:grid-cols-4 gap-4">
+            <img src="assets/tattoo1.jpg" alt="Tattoo Artwork" class="w-full h-60 object-cover rounded-xl border border-white/10" onerror="this.src='https://via.placeholder.com/300x300?text=Tattoo+Photo+1'">
+            <img src="assets/tattoo2.jpg" alt="Tattoo Artwork" class="w-full h-60 object-cover rounded-xl border border-white/10" onerror="this.src='https://via.placeholder.com/300x300?text=Tattoo+Photo+2'">
+            <img src="assets/piercing1.jpg" alt="Piercing Work" class="w-full h-60 object-cover rounded-xl border border-white/10" onerror="this.src='https://via.placeholder.com/300x300?text=Piercing+Photo+1'">
+            <img src="assets/piercing2.jpg" alt="Piercing Work" class="w-full h-60 object-cover rounded-xl border border-white/10" onerror="this.src='https://via.placeholder.com/300x300?text=Piercing+Photo+2'">
+        </div>
+    </section>
+</body>
+</html>
